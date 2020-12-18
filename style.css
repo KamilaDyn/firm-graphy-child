@@ -1,0 +1,347 @@
+/*
+Theme Name: Firm Graphy Child Theme
+Author: Kamila 
+Description:    A child theme of the Firm Graphy theme
+Template: firm-graphy
+Version: 1.1.9
+Requires PHP: 5.6
+Tested up to: 5.4.1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: firm-graphy-child
+
+*/
+
+/* ============
+custom login page 
+==========*/
+
+body.login div#login h1 a {
+    color: #01c6b8;
+    font-size: 30px;
+    font-weight: 300;
+    background-image: none;
+    width: auto;
+    height: auto;
+    text-indent: 0;
+}
+
+body.login div#login form#loginform {
+    border: 1px solid #032c42;
+}
+
+body.login div#login form#loginform p.submit input#wp-submit {
+    background-color: #29cc8b;
+    transition: all 0.3s linear;
+    border: none;
+}
+
+body.login div#login form#loginform p.submit input#wp-submit:hover {
+    background-color: #032c42;
+}
+
+body.login div#login p#backtoblog a {
+    color: #032c42;
+    ;
+}
+
+.site-branding {
+    flex-wrap: wrap;
+}
+
+.login-container {
+    width: 100%;
+    padding-bottom: 40px;
+}
+
+.login-btn {
+    float: right;
+    margin-right: 15px;
+    padding: 10px 15px;
+    font-size: 16px;
+    line-height: 24px;
+    display: inline-block;
+    border: none;
+    background-color: #29cc8b;
+    color: #fff;
+    font-weight: 600;
+    margin-top: 5px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    text-align: center;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer !important;
+}
+
+#login-btn:nth-of-type(2) {
+    border: 1px solid #29cc8b;
+    color: #29cc8b;
+    background-color: #fff;
+}
+
+#login-btn:hover {
+    background-color: #032c42;
+    color: #fff;
+}
+
+#results .address {
+    color: #29cc8b;
+    cursor: pointer;
+}
+
+#results .address:hover {
+    color: #032c42;
+}
+
+@media screen and (min-width: 992px) {
+    .main-navigation {
+        min-width: 100%;
+    }
+}
+
+.form-container {
+    margin: 0 auto;
+    max-width: 700px;
+    padding: 10px;
+    box-shadow: 5px 10px 15px 15px rgba(228, 228, 228, 0.4);
+}
+
+.map-container {
+    margin: 0 auto;
+    width: 98%;
+
+}
+
+.form-group input {
+    width: 100%;
+    border: 0.5px solid #e4e4e4;
+    background-color: transparent;
+    border-radius: 0;
+    height: 50px;
+    padding: 0;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+.map-form input {
+    width: 150px;
+    border: 0.5px solid #e4e4e4;
+    background-color: transparent;
+    height: 50px;
+}
+
+.search .input {
+    width: 300px;
+    border: 0.5px solid #e4e4e4;
+    background-color: transparent;
+    height: 50px;
+    padding: 11px 25px;
+    vertical-align: middle;
+}
+
+.search .btn {
+    margin-top: 0;
+}
+
+.form-group textarea {
+    border: 1px solid #e4e4e4 !important;
+}
+
+.form-group label {
+    font-size: 18px;
+    color: #515355;
+    line-height: 40px;
+}
+
+.form-group input[type="submit"]:hover,
+.form-group input[type="submit"]:focus {
+    background-color: #181818;
+    color: #fff;
+}
+
+.form-group input[type="submit"] {
+    background-color: #e9faf3;
+    color: #29cc8b;
+    font-size: 16px;
+    text-transform: capitalize;
+    width: auto;
+    height: auto;
+    padding: 17px 40px;
+    font-weight: 600;
+    text-align: center;
+    display: inline-block;
+    font-family: 'Muli', sans-serif;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    border-bottom: none;
+}
+
+#mapid {
+    margin-top: 0 !important;
+    border: 3px solid #e4e4e4;
+
+}
+
+
+
+.error {
+    color: red;
+    margin-left: 5px;
+}
+
+label.error {
+    display: inline;
+    color: red;
+    margin-left: 5px;
+}
+
+.table {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+td {
+    padding: 5px;
+}
+
+#btPrint {
+    background-color: transparent;
+    border: 1px solid rgba(41, 204, 139, 0.2);
+    color: #d81010;
+    padding: 11px 25px;
+    vertical-align: middle;
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+#btPrint:hover {
+    background-color: #d81010;
+    color: #fff;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Zebra striping */
+tr:nth-of-type(odd) {
+    background: #eee;
+}
+
+th {
+    background: #29cc8b;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+td,
+th {
+    padding: 6px;
+    border: 1px solid #ccc;
+}
+
+td {
+    text-align: center;
+}
+
+.single-wrapper {
+
+    position: relative;
+}
+
+@media only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px) {
+
+
+    /* Force table to not be like tables anymore */
+    table,
+    thead,
+    tbody,
+    th,
+    td,
+    tr {
+        display: block;
+    }
+
+    table tbody:first-child {
+        display: none;
+    }
+
+    table {
+        position: relative;
+    }
+
+    /* Hide table headers (but not display: none;, for accessibility) */
+    thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    tr {
+        border: 1px solid #ccc;
+    }
+
+    td {
+        /* Behave  like a "row" */
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        padding-left: 50%;
+    }
+
+    td:before {
+        /* Now like a table header */
+        position: absolute;
+        /* Top/left values mimic padding */
+        top: 6px;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+    }
+
+
+    /*
+        Label the data
+        */
+    .trow td:nth-of-type(1):before {
+        content: "Numer";
+    }
+
+    .trow td:nth-of-type(2):before {
+        content: "Zgłaszający";
+    }
+
+    .trow td:nth-of-type(3):before {
+        content: "Telefon";
+    }
+
+    .trow td:nth-of-type(4):before {
+        content: "Adres";
+    }
+
+    .trow td:nth-of-type(5):before {
+        content: "Lista zakupów";
+    }
+
+    .trow td:nth-of-type(6):before {
+        content: "Kwota maksymalna";
+    }
+
+    .trow td:nth-of-type(7):before {
+        content: "Uwagi";
+    }
+}
+
+.trow .status:before {
+    content: "Status";
+}
