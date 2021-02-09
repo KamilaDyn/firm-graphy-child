@@ -21,6 +21,7 @@ get_header();
         <main id="main" class="site-main" role="main">
             <div class="single-wrapper form-container">
                 <?php
+
                 while (have_posts()) : the_post();
 
                     get_template_part('template-parts/content', 'page');

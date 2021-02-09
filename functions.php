@@ -1,25 +1,17 @@
 <?php
 
-
-// function enqueue_parent_styles()
-// {
-//     wp_enqueue_style('parent-style', get_template_directory_uri() . '/style.css');
-// }
-// add_action('wp_enqueue_scripts', 'enqueue_parent_styles');
-
-
-
 /*remove parent function */
-function child_remove_parent_functions()
-{
-    remove_action('customize_register', 'firm_graphy_customize_register');
-}
-add_action('init', 'child_remove_parent_functions');
+// function child_remove_parent_functions()
+// {
+//     remove_action('customize_register', 'firm_graphy_customize_register');
+// }
+// add_action('init', 'child_remove_parent_functions');
 
 
 function firm_graphy_scripts_child()
 {
-    wp_enqueue_style('parent-style', get_template_directory_uri() . '/style.css');
+    wp_enqueue_style('parent-style',   get_stylesheet_directory_uri()  . '/style.css');
+    wp_enqueue_style('child-style',  get_template_directory_uri() .  '/style.css', array('parent-style'));
     wp_enqueue_style('leaflet',   get_stylesheet_directory_uri() . '/assets/leaflet/leaflet.css');
     // $variables = array(
     //     'ajaxurl' => admin_url('admin-ajax.php')
